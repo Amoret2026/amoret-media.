@@ -1,0 +1,193 @@
+<style>
+.sqs-block-code:has(.kc){padding-left: 0 !important;padding-right: 0 !important}
+.kc{--kc-ink: #1A1A2E;--kc-ivory: #F7F4EE;--kc-deep: #EFE9DF;--kc-card: #FBF9F5;--kc-gold: #9A7B4F;--kc-stone: #7A7580;--kc-body: #4A4553;--kc-line: rgba(154,123,79,0.28);display: block;width: 100%;background: var(--kc-ivory);color: var(--kc-ink);font-family: "Jost","Helvetica Neue",Arial,sans-serif;font-weight: 300;line-height: 1.7;-webkit-font-smoothing: antialiased}
+.kc *,.kc *::before,.kc *::after{box-sizing: border-box}
+.kc h1,.kc h2,.kc h3,.kc p{margin: 0;padding: 0;text-transform: none;letter-spacing: normal;word-break: normal;overflow-wrap: normal;hyphens: none}
+.kc h1,.kc h2,.kc h3{font-family: "Cormorant Garamond",Georgia,serif;font-weight: 400;line-height: 1.05;color: var(--kc-ink)}
+.kc p,.kc a,.kc span{font-family: "Jost","Helvetica Neue",Arial,sans-serif}
+.kc a{text-decoration: none !important;color: inherit}
+.kc img{display: block;width: 100%;height: 100%;max-width: none;object-fit: cover}
+.kc .kc-wrap{width: 100%;max-width: 1200px;margin: 0 auto;padding: 0 clamp(20px,5vw,56px)}
+.kc .kc-eyebrow{display: block;font-size: 11px;font-weight: 400;letter-spacing: 0.28em;text-transform: uppercase;color: var(--kc-gold)}
+.kc .kc-rule{display: flex;align-items: center;gap: 12px;width: 220px;max-width: 70%;margin: 24px auto}
+.kc .kc-rule::before,.kc .kc-rule::after{content: "";flex: 1;height: 1px;background: var(--kc-gold);opacity: 0.7}
+.kc .kc-rule span{width: 6px;height: 6px;flex: none;background: var(--kc-gold);transform: rotate(45deg)}
+.kc .kc-textlink{align-self: flex-start;font-size: 11px;font-weight: 400;letter-spacing: 0.2em;text-transform: uppercase;color: var(--kc-ink) !important;border-bottom: 1px solid var(--kc-gold);padding-bottom: 3px;transition: color 0.25s ease}
+.kc .kc-textlink:hover{color: var(--kc-gold) !important}
+.kc .kc-btn{display: inline-block;margin-top: 28px;padding: 15px 30px;background: var(--kc-ink);border: 1px solid var(--kc-ink);color: var(--kc-ivory) !important;font-size: 11px;font-weight: 400;letter-spacing: 0.22em;text-transform: uppercase;transition: background 0.3s ease,color 0.3s ease}
+.kc .kc-btn:hover{background: transparent;color: var(--kc-ink) !important}
+.kc .kc-hero{padding: clamp(64px,9vw,120px) 0 clamp(44px,6vw,76px);text-align: center}
+.kc .kc-hero h1{margin-top: 18px;font-size: clamp(48px,7vw,92px);letter-spacing: 0.01em}
+.kc .kc-hero h1 em,.kc .kc-cta h2 em{font-style: italic;color: var(--kc-gold)}
+.kc .kc-lede{max-width: 560px;margin: 0 auto;font-size: 15px;line-height: 1.85;letter-spacing: 0.03em;color: var(--kc-body)}
+.kc .kc-products{display: grid;grid-template-columns: repeat(2,minmax(0,1fr));gap: clamp(48px,6vw,80px) clamp(24px,4vw,48px)}
+.kc .kc-product-img{aspect-ratio: 1 / 1;overflow: hidden;background: var(--kc-deep)}
+.kc .kc-product-img img{transition: transform 0.6s ease}
+.kc .kc-product:hover .kc-product-img img{transform: scale(1.02)}
+.kc .kc-product-body{padding-top: 22px}
+.kc .kc-product h3{font-size: clamp(28px,2.6vw,36px)}
+.kc .kc-product-desc{max-width: 440px;margin-top: 8px;font-size: 14px;line-height: 1.7;color: var(--kc-body)}
+.kc .kc-product-body .kc-textlink{display:inline-block;margin-top:16px}
+.kc .kc-products.kc-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.kc .kc-products.kc-three .kc-product h3{font-size:clamp(24px,2.2vw,30px)}
+.kc .kc-sub{padding-top:clamp(72px,9vw,110px);margin-bottom:clamp(32px,4vw,48px);text-align:center}
+.kc .kc-sub h2{margin-top:10px;font-size:clamp(30px,3.4vw,44px)}
+.kc .kc-sub p{max-width:520px;margin:12px auto 0;font-size:14px;line-height:1.8;color:var(--kc-body)}
+.kc .kc-personal{padding-top: clamp(64px,8vw,100px);text-align: center}
+.kc .kc-personal h2{margin-top: 10px;font-size: clamp(28px,3vw,38px)}
+.kc .kc-chips{display: flex;flex-wrap: wrap;justify-content: center;gap: 10px 12px;margin-top: 22px}
+.kc .kc-chips span{padding: 9px 16px;border: 1px solid var(--kc-line);font-size: 11px;font-weight: 400;letter-spacing: 0.18em;text-transform: uppercase;color: var(--kc-body)}
+.kc .kc-finish{margin-top: clamp(64px,8vw,100px);padding: clamp(48px,6vw,76px) 0;background: var(--kc-deep)}
+.kc .kc-finish-head{margin-bottom: 34px;text-align: center}
+.kc .kc-finish-head h2{margin-top: 10px;font-size: clamp(30px,3.4vw,44px)}
+.kc .kc-finish-grid{display: grid;grid-template-columns: repeat(3,minmax(0,1fr));border-top: 1px solid var(--kc-line);border-bottom: 1px solid var(--kc-line)}
+.kc .kc-finish-item{padding: 30px 26px;text-align: center}
+.kc .kc-finish-item + .kc-finish-item{border-left: 1px solid var(--kc-line)}
+.kc .kc-finish-item h3{font-size: 26px}
+.kc .kc-finish-item p{max-width: 260px;margin: 8px auto 0;font-size: 13px;line-height: 1.7;color: var(--kc-body)}
+.kc .kc-cta{padding: clamp(64px,8vw,104px) 0;text-align: center}
+.kc .kc-cta h2{font-size: clamp(34px,4.4vw,56px)}
+.kc .kc-cta p{max-width: 520px;margin: 16px auto 0;font-size: 14px;line-height: 1.8;color: var(--kc-body)}
+.kc .kc-pager{display: flex;justify-content: space-between;gap: 20px;padding: 22px 0 44px;border-top: 1px solid var(--kc-gold)}
+.kc .kc-pager a{font-family: "Cormorant Garamond",Georgia,serif;font-size: 17px;font-style: italic;color: var(--kc-stone) !important;transition: color 0.25s ease}
+.kc .kc-pager a:hover{color: var(--kc-gold) !important}
+@media screen and (max-width:760px){.kc .kc-products,.kc .kc-products.kc-three{grid-template-columns:1fr;gap:52px}.kc .kc-finish-grid{grid-template-columns:1fr}.kc .kc-finish-item + .kc-finish-item{border-left:0;border-top:1px solid var(--kc-line)}}
+@media screen and (max-width:560px){.kc .kc-pager{flex-direction:column;gap:10px}}
+</style>
+
+<div class="kc">
+
+  <section class="kc-hero">
+    <div class="kc-wrap">
+      <span class="kc-eyebrow">The Kept Collection · Chapter II</span>
+      <h1>The bridesmaid</h1>
+      <div class="kc-rule"><span></span></div>
+      <p class="kc-lede">For the women beside you. Ask them, thank them and send them home with something made to be kept.</p>
+    </div>
+  </section>
+
+  <section class="kc-wrap">
+    <div class="kc-products">
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_bouquet-pro.jpg" alt="Tulip candle bouquet in a faceted pot"></div>
+        <div class="kc-product-body">
+          <h3>The Amoret bouquet</h3>
+          <p class="kc-product-desc">Sculpted tulips and dried gypsophila in a faceted cast pot, tied with satin.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_coupe-pro.jpg" loading="lazy" alt="Pearl coupe candle with a satin bow"></div>
+        <div class="kc-product-body">
+          <h3>The pearl coupe</h3>
+          <p class="kc-product-desc">A candle poured into a stemmed glass, finished with pearls and a satin bow.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_muse-tray-pro.jpg" loading="lazy" alt="Bust and hydrangea candles on a blush tray"></div>
+        <div class="kc-product-body">
+          <h3>The muse tray</h3>
+          <p class="kc-product-desc">A sculptural bust and a hydrangea bloom, set on a blush marbled tray.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_proposal-box-v2.jpg" loading="lazy" alt="Bridesmaid proposal box with heart and rose candles"></div>
+        <div class="kc-product-body">
+          <h3>The proposal box</h3>
+          <p class="kc-product-desc">A heart, a rose and an embracing pair, boxed with a card to ask the question.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="kc-wrap kc-sub">
+    <span class="kc-eyebrow">The keepsake jars</span>
+    <h2>Poured to keep</h2>
+    <p>Bloom-topped candles in vessels made to be used again — for the getting-ready table and long after.</p>
+  </section>
+
+  <section class="kc-wrap">
+    <div class="kc-products">
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_ribbed-jar-pro.jpg" loading="lazy" alt="Peony candle in a ribbed lidded jar"></div>
+        <div class="kc-product-body">
+          <h3>The ribbed jar</h3>
+          <p class="kc-product-desc">A peony candle in a ribbed cast pot with a lid.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_bloom-glass-pro.jpg" loading="lazy" alt="Tall glass candle with a bloom on top"></div>
+        <div class="kc-product-body">
+          <h3>The bloom glass</h3>
+          <p class="kc-product-desc">A tall glass printed with our wordmark, crowned with a sculpted bloom.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_bloom-tumbler-v2.jpg" loading="lazy" alt="Low glass candle with roses on top"></div>
+        <div class="kc-product-body">
+          <h3>The bloom tumbler</h3>
+          <p class="kc-product-desc">A low glass with a rose-crowned candle, printed with our wordmark.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/bridesmaid_keepsake-pots-pro.jpg" alt="Amoret keepsake pot candles" loading="lazy"></div>
+        <div class="kc-product-body">
+          <h3>The keepsake pots</h3>
+          <p class="kc-product-desc">Our newest pieces: hand-poured candles in pots made to be kept long after the day.</p>
+          <a class="kc-textlink" href="/home#enquiry">Enquire</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="kc-wrap kc-personal">
+    <span class="kc-eyebrow">Made personal</span>
+    <h2>Every piece, made yours</h2>
+    <div class="kc-chips"><span>Name or initials</span><span>Role</span><span>Wedding date</span><span>Scent</span><span>Ribbon colour</span><span>Wax seal</span></div>
+  </section>
+
+  <section class="kc-finish">
+    <div class="kc-wrap">
+      <div class="kc-finish-head">
+        <span class="kc-eyebrow">How it's finished</span>
+        <h2>The opening is part of the gift</h2>
+      </div>
+      <div class="kc-finish-grid">
+        <div class="kc-finish-item">
+          <h3>Our signature box</h3>
+          <p>Blue Wibalin linen, foiled in gold with the Amoret wordmark and <em>the art of the detail</em>, lined with tissue and finished with a tag or card.</p>
+        </div>
+        <div class="kc-finish-item">
+          <h3>For favours</h3>
+          <p>Smaller boxes, tied with ribbon and finished with a printed name tag.</p>
+        </div>
+        <div class="kc-finish-item">
+          <h3>Add-ons</h3>
+          <p>A linen drawstring bag, a hand-pressed wax seal, or a personal card such as “Will you be our godparents?”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kc-cta">
+    <div class="kc-wrap">
+      <h2>For the women <em>beside you.</em></h2>
+      <p>Share your date, the number in your bridal party and the pieces you're drawn to. We'll reply within two working days with a tailored proposal.</p>
+      <a class="kc-btn" href="/home#enquiry">Enquire</a>
+    </div>
+  </section>
+
+  <nav class="kc-wrap">
+    <div class="kc-pager">
+      <a href="/wedding-favours">← Chapter I · Wedding favours</a>
+      <a href="/the-gentleman">Chapter III · The gentleman →</a>
+    </div>
+  </nav>
+
+</div>
