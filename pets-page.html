@@ -1,0 +1,245 @@
+<style>
+.sqs-block-code:has(.kc){padding-left: 0 !important;padding-right: 0 !important}
+.kc{--kc-ink: #1A1A2E;--kc-ivory: #F7F4EE;--kc-deep: #EFE9DF;--kc-card: #FBF9F5;--kc-gold: #9A7B4F;--kc-stone: #7A7580;--kc-body: #4A4553;--kc-line: rgba(154,123,79,0.28);display: block;width: 100%;background: var(--kc-ivory);color: var(--kc-ink);font-family: "Jost","Helvetica Neue",Arial,sans-serif;font-weight: 300;line-height: 1.7;-webkit-font-smoothing: antialiased}
+.kc *,.kc *::before,.kc *::after{box-sizing: border-box}
+.kc h1,.kc h2,.kc h3,.kc p{margin: 0;padding: 0;text-transform: none;letter-spacing: normal;word-break: normal;overflow-wrap: normal;hyphens: none}
+.kc h1,.kc h2,.kc h3{font-family: "Cormorant Garamond",Georgia,serif;font-weight: 400;line-height: 1.05;color: var(--kc-ink)}
+.kc p,.kc a,.kc span,.kc li{font-family: "Jost","Helvetica Neue",Arial,sans-serif}
+.kc a{text-decoration: none !important;color: inherit}
+.kc img{display: block;width: 100%;height: 100%;max-width: none;object-fit: cover}
+.kc .kc-wrap{width: 100%;max-width: 1200px;margin: 0 auto;padding: 0 clamp(20px,5vw,56px)}
+.kc .kc-eyebrow{display: block;font-size: 11px;font-weight: 400;letter-spacing: 0.28em;text-transform: uppercase;color: var(--kc-gold)}
+.kc .kc-rule{display: flex;align-items: center;gap: 12px;width: 220px;max-width: 70%;margin: 24px auto}
+.kc .kc-rule::before,.kc .kc-rule::after{content: "";flex: 1;height: 1px;background: var(--kc-gold);opacity: 0.7}
+.kc .kc-rule span{width: 6px;height: 6px;flex: none;background: var(--kc-gold);transform: rotate(45deg)}
+.kc .kc-textlink{display: inline-block;margin-top: 18px;font-size: 11px;font-weight: 400;letter-spacing: 0.2em;text-transform: uppercase;color: var(--kc-ink) !important;border-bottom: 1px solid var(--kc-gold);padding-bottom: 3px;transition: color 0.25s ease}
+.kc .kc-textlink:hover{color: var(--kc-gold) !important}
+.kc .kc-btn{display: inline-block;margin-top: 28px;padding: 15px 30px;background: var(--kc-ink);border: 1px solid var(--kc-ink);color: var(--kc-ivory) !important;font-size: 11px;font-weight: 400;letter-spacing: 0.22em;text-transform: uppercase;transition: background 0.3s ease,color 0.3s ease}
+.kc .kc-btn:hover{background: transparent;color: var(--kc-ink) !important}
+.kc .kc-banner{background: var(--kc-ink);padding: 16px 20px;text-align: center}
+.kc .kc-banner p{display: flex;align-items: center;justify-content: center;gap: 14px;flex-wrap: wrap;font-size: 11px;font-weight: 400;letter-spacing: 0.26em;text-transform: uppercase;color: var(--kc-ivory)}
+.kc .kc-banner .kc-diamond{width: 6px;height: 6px;background: var(--kc-gold);transform: rotate(45deg);flex: none}
+.kc .kc-banner a{color: var(--kc-gold) !important;border-bottom: 1px solid var(--kc-gold);padding-bottom: 2px}
+.kc .kc-hero{padding: clamp(56px,8vw,110px) 0 clamp(44px,6vw,64px);text-align: center}
+.kc .kc-badge{display: inline-block;padding: 7px 14px;border: 1px solid var(--kc-gold);color: var(--kc-gold);font-size: 9px;font-weight: 400;letter-spacing: 0.24em;text-transform: uppercase;margin-bottom: 22px}
+.kc .kc-hero h1{margin-top: 18px;font-size: clamp(48px,7vw,92px);letter-spacing: 0.01em}
+.kc .kc-hero h1 em,.kc .kc-cta h2 em,.kc .kc-head h2 em{font-style: italic;color: var(--kc-gold)}
+.kc .kc-lede{max-width: 580px;margin: 0 auto;font-size: 15px;line-height: 1.85;letter-spacing: 0.03em;color: var(--kc-body)}
+.kc .kc-pair{display: grid;grid-template-columns: repeat(2,minmax(0,1fr));gap: clamp(16px,2vw,24px)}
+.kc .kc-pair figure{margin: 0;aspect-ratio: 4 / 5;overflow: hidden;background: var(--kc-deep)}
+.kc .kc-head{padding-top: clamp(80px,10vw,128px);margin-bottom: clamp(36px,4vw,52px);text-align: center}
+.kc .kc-head h2{margin-top: 12px;font-size: clamp(34px,4vw,52px)}
+.kc .kc-head p{max-width: 560px;margin: 16px auto 0;font-size: 14px;line-height: 1.8;color: var(--kc-body)}
+.kc .kc-products{display: grid;grid-template-columns: repeat(2,minmax(0,1fr));gap: clamp(48px,6vw,80px) clamp(24px,4vw,48px)}
+.kc .kc-product-img{aspect-ratio: 4 / 5;overflow: hidden;background: var(--kc-deep)}
+.kc .kc-product-img img{transition: transform 0.6s ease}
+.kc .kc-product:hover .kc-product-img img{transform: scale(1.02)}
+.kc .kc-product-body{padding-top: 22px}
+.kc .kc-product h3{font-size: clamp(28px,2.6vw,36px)}
+.kc .kc-product-desc{max-width: 440px;margin-top: 8px;font-size: 14px;line-height: 1.7;color: var(--kc-body)}
+.kc .kc-spec{display: block;margin-top: 10px;font-size: 11px;letter-spacing: 0.18em;text-transform: uppercase;color: var(--kc-gold)}
+.kc .kc-toys{margin-top: clamp(80px,10vw,128px);padding: clamp(48px,6vw,76px) 0;background: var(--kc-deep)}
+.kc .kc-toys-wrap{display: grid;grid-template-columns: 1.1fr 0.9fr;align-items: center;gap: clamp(28px,5vw,72px)}
+.kc .kc-toys-imgs{display: grid;grid-template-columns: 1fr;max-width: 460px;gap: clamp(12px,1.5vw,18px)}
+.kc .kc-toys-imgs figure{margin: 0;aspect-ratio: 4 / 5;overflow: hidden;background: var(--kc-ivory)}
+.kc .kc-toys-text h2{margin-top: 12px;font-size: clamp(32px,3.4vw,44px)}
+.kc .kc-toys-text p{max-width: 420px;margin-top: 14px;font-size: 14px;line-height: 1.8;color: var(--kc-body)}
+.kc .kc-sets{display: grid;grid-template-columns: repeat(3,minmax(0,1fr));gap: clamp(24px,3vw,36px)}
+.kc .kc-set{display: flex;flex-direction: column;background: var(--kc-card);border: 1px solid var(--kc-line)}
+.kc .kc-set-img{aspect-ratio: 4 / 5;overflow: hidden;background: var(--kc-deep)}
+.kc .kc-set-body{flex: 1;display: flex;flex-direction: column;align-items: center;text-align: center;padding: 28px 24px 32px}
+.kc .kc-set-body h3{margin-top: 8px;font-size: clamp(28px,2.6vw,34px)}
+.kc .kc-set-line{display: block;width: 40px;height: 1px;margin: 14px auto;background: var(--kc-gold);opacity: 0.7}
+.kc .kc-set-body p{max-width: 280px;font-size: 13px;line-height: 1.7;color: var(--kc-body)}
+.kc .kc-set-body ul{list-style: none;margin: 18px 0 0;padding: 16px 0 0;width: 100%;border-top: 1px solid var(--kc-line)}
+.kc .kc-set-body li{margin: 0 0 6px;padding: 0;font-size: 12px;letter-spacing: 0.04em;color: var(--kc-ink)}
+.kc .kc-set-body .kc-textlink{margin-top: auto;padding-top: 18px;border-bottom: 0}
+.kc .kc-set-body .kc-textlink span{border-bottom: 1px solid var(--kc-gold);padding-bottom: 3px}
+.kc .kc-personal{padding-top: clamp(64px,8vw,100px);text-align: center}
+.kc .kc-personal h2{margin-top: 10px;font-size: clamp(28px,3vw,38px)}
+.kc .kc-chips{display: flex;flex-wrap: wrap;justify-content: center;gap: 10px 12px;margin-top: 22px}
+.kc .kc-chips span{padding: 9px 16px;border: 1px solid var(--kc-line);font-size: 11px;font-weight: 400;letter-spacing: 0.18em;text-transform: uppercase;color: var(--kc-body)}
+.kc .kc-cta{margin-top: clamp(64px,8vw,100px);padding: clamp(64px,8vw,104px) 0;text-align: center;background: var(--kc-deep)}
+.kc .kc-cta h2{font-size: clamp(34px,4.4vw,56px)}
+.kc .kc-cta p{max-width: 520px;margin: 16px auto 0;font-size: 14px;line-height: 1.8;color: var(--kc-body)}
+.kc .kc-pager{display: flex;justify-content: space-between;gap: 20px;padding: 22px 0 44px;margin-top: 40px;border-top: 1px solid var(--kc-gold)}
+.kc .kc-pager a{font-family: "Cormorant Garamond",Georgia,serif;font-size: 17px;font-style: italic;color: var(--kc-stone) !important;transition: color 0.25s ease}
+.kc .kc-pager a:hover{color: var(--kc-gold) !important}
+@media screen and (max-width:900px){.kc .kc-sets{grid-template-columns:1fr;max-width:480px;margin:0 auto}.kc .kc-toys-wrap{grid-template-columns:1fr}.kc .kc-toys-text{text-align:center}.kc .kc-toys-text p{margin-left:auto;margin-right:auto}}
+@media screen and (max-width:760px){.kc .kc-products{grid-template-columns:1fr;gap:52px}}
+@media screen and (max-width:560px){.kc .kc-pair{grid-template-columns:1fr}.kc .kc-pair figure + figure{display:none}.kc .kc-pager{flex-direction:column;gap:10px}}
+</style>
+
+<div class="kc">
+
+  <div class="kc-banner">
+    <p>Coming soon <span class="kc-diamond"></span> <a href="/home#enquiry">Join the list to hear first</a></p>
+  </div>
+
+  <section class="kc-hero">
+    <div class="kc-wrap">
+      <span class="kc-badge">Coming soon</span>
+      <span class="kc-eyebrow">The Kept Collection · Chapter V</span>
+      <h1>Amoret <em>Pets</em></h1>
+      <div class="kc-rule"><span></span></div>
+      <p class="kc-lede">For the dogs who belong in the photographs too. Sculpted puppy candles, ribbed clay bowls glazed and kiln-fired, safe for food and water, and handmade crochet toys, boxed with the same care as everything we make.</p>
+    </div>
+  </section>
+
+  <div class="kc-wrap">
+    <div class="kc-pair">
+      <figure><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_hero.jpg" alt="Ivory and caramel puppy candles with ribbed bowls and the Amoret tag"></figure>
+      <figure><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_shih-tzu-bone.jpg" alt="A Shih Tzu resting with the navy crochet bone"></figure>
+    </div>
+  </div>
+
+  <section class="kc-wrap">
+    <div class="kc-head">
+      <span class="kc-eyebrow">I · The candles</span>
+      <h2>Sculpted puppy <em>candles</em></h2>
+      <p>Hand-poured in vegan soy wax, every curl set by hand. Made to be kept long after the first light.</p>
+    </div>
+    <div class="kc-products">
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_candles-ivory-caramel.jpg" alt="Large puppy candles in ivory and caramel"></div>
+        <div class="kc-product-body">
+          <h3>The large puppy candle</h3>
+          <p class="kc-product-desc">A curly-coated puppy, sitting tall, in soft ivory or warm caramel.</p>
+          <span class="kc-spec">10.9 h × 8.8 w cm</span>
+          <a class="kc-textlink" href="/home#enquiry">Join the list</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_candle-duo.jpg" style="object-position: 70% 60%" alt="Small puppy candle in its little jacket beside the large candle"></div>
+        <div class="kc-product-body">
+          <h3>The small puppy candle</h3>
+          <p class="kc-product-desc">The little one, dressed in a tiny jacket. Lovely on its own, or beside the large.</p>
+          <span class="kc-spec">5.7 h × 4.6 w cm</span>
+          <a class="kc-textlink" href="/home#enquiry">Join the list</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="kc-wrap">
+    <div class="kc-head">
+      <span class="kc-eyebrow">II · The bowls</span>
+      <h2>Ribbed clay <em>bowls</em></h2>
+      <p>Thrown in clay, glazed and kiln-fired, safe for food and water. Finished in ivory, with a scalloped rim and fine vertical ribs.</p>
+    </div>
+    <div class="kc-products">
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_bowl-ivory.jpg" alt="Large ivory ribbed clay bowl"></div>
+        <div class="kc-product-body">
+          <h3>The large ribbed bowl</h3>
+          <p class="kc-product-desc">An everyday bowl for food or water, made to sit beautifully in any room.</p>
+          <span class="kc-spec">Ivory · glazed and kiln-fired</span>
+          <a class="kc-textlink" href="/home#enquiry">Join the list</a>
+        </div>
+      </article>
+      <article class="kc-product">
+        <div class="kc-product-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_bowl-detail.jpg" alt="Close-up of the scalloped rim and ribs of the ivory bowl"></div>
+        <div class="kc-product-body">
+          <h3>The small ribbed bowl</h3>
+          <p class="kc-product-desc">The same bowl in a smaller size, for little dogs, treats or water on the go.</p>
+          <span class="kc-spec">Ivory · glazed and kiln-fired</span>
+          <a class="kc-textlink" href="/home#enquiry">Join the list</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="kc-toys">
+    <div class="kc-wrap kc-toys-wrap">
+      <div class="kc-toys-imgs">
+        <figure><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_crochet-bone.jpg" alt="Two navy crochet bones"></figure>
+      </div>
+      <div class="kc-toys-text">
+        <span class="kc-eyebrow">In the box</span>
+        <h2>Handmade crochet toys</h2>
+        <p>A chunky navy bone and an ivory ball with a navy stripe, crocheted by hand and filled soft. Made to be carried around, and found in our gift sets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="kc-wrap">
+    <div class="kc-head">
+      <span class="kc-eyebrow">III · The sets</span>
+      <h2>Boxed and <em>ready to give</em></h2>
+      <p>Each set arrives in our navy linen box, wrapped in ivory tissue and finished by hand.</p>
+    </div>
+    <div class="kc-sets">
+
+      <article class="kc-set">
+        <div class="kc-set-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_set-companion.jpg" alt="The companion set: large puppy candle, large ribbed bowl, crochet bone and ball in the navy Amoret box"></div>
+        <div class="kc-set-body">
+          <span class="kc-eyebrow">Set one</span>
+          <h3>The companion set</h3>
+          <span class="kc-set-line"></span>
+          <p>Everything for a new arrival, or a dog who has everything.</p>
+          <ul>
+            <li>Large puppy candle</li>
+            <li>Large ribbed clay bowl</li>
+            <li>Crochet bone and ball</li>
+          </ul>
+          <a class="kc-textlink" href="/home#enquiry"><span>Join the list</span></a>
+        </div>
+      </article>
+
+      <article class="kc-set">
+        <div class="kc-set-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_set-little-keepsake.jpg" alt="The little keepsake set: small puppy candle, small ribbed bowl and crochet bone in the navy Amoret box"></div>
+        <div class="kc-set-body">
+          <span class="kc-eyebrow">Set two</span>
+          <h3>The little keepsake set</h3>
+          <span class="kc-set-line"></span>
+          <p>A small-scale set, made for gifting.</p>
+          <ul>
+            <li>Small puppy candle</li>
+            <li>Small ribbed clay bowl</li>
+            <li>Crochet bone</li>
+          </ul>
+          <a class="kc-textlink" href="/home#enquiry"><span>Join the list</span></a>
+        </div>
+      </article>
+
+      <article class="kc-set">
+        <div class="kc-set-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_set-heirloom-duo.jpg" alt="The heirloom duo: large and small puppy candles with a large ribbed bowl in the navy Amoret box"></div>
+        <div class="kc-set-body">
+          <span class="kc-eyebrow">Set three</span>
+          <h3>The heirloom duo</h3>
+          <span class="kc-set-line"></span>
+          <p>Two sizes, one special bond. A collectible pair to keep.</p>
+          <ul>
+            <li>Large puppy candle</li>
+            <li>Small puppy candle</li>
+            <li>Large ribbed clay bowl</li>
+          </ul>
+          <a class="kc-textlink" href="/home#enquiry"><span>Join the list</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="kc-wrap kc-personal">
+    <span class="kc-eyebrow">Made personal</span>
+    <h2>Every set, made theirs</h2>
+    <div class="kc-chips"><span>Dog's name</span><span>Candle colour</span><span>Ribbon colour</span><span>Personal card</span><span>Wax seal</span></div>
+  </section>
+
+  <section class="kc-cta">
+    <div class="kc-wrap">
+      <h2>Be the <em>first to know.</em></h2>
+      <p>Leave your details and tick "Sign up for news and updates", and we'll let you know the day Amoret Pets launches.</p>
+      <a class="kc-btn" href="/home#enquiry">Join the list</a>
+    </div>
+  </section>
+
+  <nav class="kc-wrap">
+    <div class="kc-pager">
+      <a href="/baby">← Chapter IV · Baby</a>
+      <a href="/the-kept-collection">The Kept Collection →</a>
+    </div>
+  </nav>
+
+</div>
