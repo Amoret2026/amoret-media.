@@ -68,6 +68,13 @@
 @media screen and (max-width:900px){.kc .kc-sets{grid-template-columns:1fr;max-width:480px;margin:0 auto}.kc .kc-toys-wrap{grid-template-columns:1fr}.kc .kc-toys-text{text-align:center}.kc .kc-toys-text p{margin-left:auto;margin-right:auto}}
 @media screen and (max-width:760px){.kc .kc-products{grid-template-columns:1fr;gap:52px}}
 @media screen and (max-width:560px){.kc .kc-pair{grid-template-columns:1fr}.kc .kc-pair figure + figure{display:none}.kc .kc-pager{flex-direction:column;gap:10px}}
+.kc .kc-testers{padding-top: clamp(80px,10vw,128px)}
+.kc .kc-testers-grid{display: grid;grid-template-columns: repeat(2,minmax(0,1fr));gap: clamp(20px,3vw,36px)}
+.kc .kc-testers figure{margin: 0}
+.kc .kc-testers .kc-tester-img{aspect-ratio: 4 / 5;overflow: hidden;background: var(--kc-deep)}
+.kc .kc-testers figcaption{margin-top: 16px;text-align: center;font-family: "Cormorant Garamond",Georgia,serif;font-size: 20px;font-style: italic;color: var(--kc-ink)}
+.kc .kc-testers figcaption span{display: block;margin-top: 4px;font-family: "Jost","Helvetica Neue",Arial,sans-serif;font-size: 11px;font-style: normal;letter-spacing: 0.2em;text-transform: uppercase;color: var(--kc-gold)}
+@media screen and (max-width:560px){.kc .kc-testers-grid{grid-template-columns:1fr}}
 </style>
 
 <div class="kc">
@@ -89,7 +96,7 @@
   <div class="kc-wrap">
     <div class="kc-pair">
       <figure><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_hero.jpg" alt="Ivory and caramel puppy candles with ribbed bowls and the Amoret tag"></figure>
-      <figure><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_shih-tzu-bone.jpg" alt="A Shih Tzu resting with the navy crochet bone"></figure>
+      <figure><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_set-companion.jpg" alt="The companion set in the navy Amoret box"></figure>
     </div>
   </div>
 
@@ -218,6 +225,24 @@
         </div>
       </article>
 
+    </div>
+  </section>
+
+  <section class="kc-wrap kc-testers">
+    <div class="kc-head" style="padding-top:0">
+      <span class="kc-eyebrow">Our first testers</span>
+      <h2>Approved <em>at home</em></h2>
+      <p>Before anything leaves the studio, it is loved, carried, napped on and very thoroughly inspected by the two dogs who started it all.</p>
+    </div>
+    <div class="kc-testers-grid">
+      <figure>
+        <div class="kc-tester-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_shih-tzu-bone.jpg" alt="A Shih Tzu resting with the navy crochet bone"></div>
+        <figcaption>Never lets it out of reach<span>Head of comfort</span></figcaption>
+      </figure>
+      <figure>
+        <div class="kc-tester-img"><img src="https://cdn.jsdelivr.net/gh/Amoret2026/amoret-media.@main/pets_giorgio-bone.jpg" alt="Giorgio the bulldog with the navy crochet bone"></div>
+        <figcaption>Giorgio, unconvinced until the first squeeze<span>Chief bone inspector</span></figcaption>
+      </figure>
     </div>
   </section>
 
